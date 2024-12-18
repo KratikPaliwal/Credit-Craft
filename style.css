@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+#footer-div{
+      height: 100px;
+      width: 100%;
+      margin-bottom: 5px;
+}
+h3 img{
+    position: relative;
+    top: 1rem;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+h3{
+    position: absolute;
+    text-align: center;
+    top: 3px;
+    font-family: "Iceland", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+}
+#footer-nav{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 80%;
+   
+}
+
+.nav-heading{
+    font-size: 18px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+
+}
+
+#Display-card{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#credit-card{
+    height: 40vh;
+    width: 30%;
+    background-color: #222222;
+    border-radius: 20px;
+    position: relative;
+    top: 5px;
+
+}
+
+#input-card{
+    height: 40vh;
+    width: 40%;
+    border-radius: 10px;
+    position: relative;
+    top: 5px;
+    
+}
+
+#bank-name{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+
+}
+
+#Credit{
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+#bank{
+    margin-right: 15%;
+    margin-top: 5%;
+}
+
+#img-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#wifi{
+    color: #fff;
+    font-size: 38px;
+    margin-right: 18%;
+    margin-top: 14px;
+}
+
+#sensor{
+    margin-left: 15%;
+    margin-top: 10px;
+}
+
+#number{
+    display: flex;
+    justify-content: space-evenly;    
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 10px;
+    padding: 1rem;
+    font-family: "Iceland", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#valid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: small;
+}
+
+#valid-date{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    font-size: smaller;
+    gap: 10px;
+}
+
+#date-div{
+    position: relative;
+    top: 8px;
+    font-size: 18px;
+}
+
+
+#name{
+    color: #fff;
+    position: relative;
+    top: 50px;
+    margin-left: 20px;
+}
+
+.input-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: 5%; 
+}
+
+
+.input-div label{
+    width: 35%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.input-div input{
+    width: 55%;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+#submit-btn{
+    display: flex;
+    justify-content: center;
+
+}
+
+button{
+    width: 20%;
+    border-radius: 20px;
+    size: 20px;
+}
+
+.iceland-regular {
+    font-family: "Iceland", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.main-section{
+    background-image: url(creditcard.jpg);
+    height: 70rem;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    animation: slider 10s infinite 1s linear ;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+@keyframes slider{
+    0%{
+        background-image: url(photo1.png);
+    }
+    25%{
+        background-image: url(blackcard.jpg);
+    }
+    50%{
+        background-image: url(carcard.jpg);
+    }
+    75%{
+        background-image: url(creditcard.jpg);
+    }
+    100%{
+        background-image: url(avvengers.png);
+    }
+}
+
+#Customize-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#Customize-button button{
+    height: 2rem;
+    position: relative;
+    top: 1rem;
+    background-color:  #f4d98f;
+}
+
+@media (max-width: 768px) {
+    #footer-nav{
+        flex-direction: column;
+        align-items: center;
+        top: 50%;
+    }
+
+    .nav-heading{
+        margin-bottom: 10px;
+    }
+
+    #Display-card{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #credit-card, #input-card{
+        width: 90%;
+    }
+
+    .input-div{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-div label, .input-div input{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    h3{
+        font-size: 18px;
+    }
+
+    .nav-heading{
+        font-size: 14px;
+    }
+
+    #footer-div{
+        height: auto;
+        padding: 10px;
+    }
+
+    #Display-card{
+        gap: 10px;
+    }
+
+    #credit-card, #input-card{
+        width: 100%;
+    }
+
+    .input-div{
+        margin-bottom: 10px;
+    }
+}
