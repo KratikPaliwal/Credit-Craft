@@ -11,19 +11,26 @@ let name_display = document.querySelector('#disname');
 let name_input = document.querySelector('#namedis');
 
 submit_btn.addEventListener('click',()=>{
-    let bankval = bank_input.value;
-    bank_display.innerHTML=bankval;
-    let numberval = number_input.value;
-    display_number.innerHTML=numberval;
+    let bankval = bank_input.value.trim();
+    let numberval = number_input.value.trim();
     let sdval = valid_date_input.value;
-    let date = new Date(sdval);
-    sdval=`${date.getMonth()+1}/${(date.getFullYear())-2000}`;
-    console.log(sdval);
-    display_valid_date.innerHTML=sdval;
-    let edate=valid_end_input.value;
-    let date2 = new Date(edate);
-    edate =`${date.getMonth()+1}/${(date2.getFullYear())-2000}`;
-    display_end_date.innerHTML=edate;
-    let nameval = name_input.value;
-    name_display.innerHTML=nameval;
-})
+    let edate = valid_end_input.value;
+    let nameval = name_input.value.trim();
+    if(!bankval || !numberval || !sdval || !edate || !nameval){
+        alert("Please fill in all fields");
+        return;
+    }
+    let cardnumber = /^\d{16}$/;
+    if(!cardnumber.test(numberval)){
+        alert("Invalid card number");
+    }
+    let startDate = new Date(sdval);
+    
+    sdval = `${startDate.getMonth() + 1}/${(startDate.getFullYear()) - 2000}`;
+    display_valid_date.innerHTML = sdval;
+    edate = `${startDate.getMonth() + 1}/${((startDate.getFullYear()) - 2000)+5}`;
+    display_end_date.innerHTML = edate;
+    bank_display.innerHTML = bankval;
+    display_number.innerHTML = numberval;
+    name_display.innerHTML = nameval;
+});

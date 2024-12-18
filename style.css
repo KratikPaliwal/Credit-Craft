@@ -6,12 +6,12 @@
 
 html,body{
     height: 100%;
-    width: 100%;
+    width: 100%;  
 }
 
 
 
-#footer-div{
+#header-div{
       height: 100px;
       width: 100%;
       margin-bottom: 5px;
@@ -21,6 +21,7 @@ h3 img{
     top: 1rem;
     object-fit: cover;
     border-radius: 50px;
+    overflow: hidden;
 }
 
 h3{
@@ -64,7 +65,7 @@ a{
 }
 
 #credit-card{
-    height: 40vh;
+    height: 35vh;
     width: 30%;
     background-color: #222222;
     border-radius: 20px;
@@ -202,6 +203,12 @@ button{
     font-style: normal;
 }
 
+#h2-heading{
+    position: relative;
+    left: 1rem;
+   
+}
+
 
 .main-section{
     background-image: url(creditcard.jpg);
@@ -215,6 +222,28 @@ button{
     overflow: hidden;
 }
 
+#premade-card{
+    height: 300px;
+    width: 400px;
+    background-color: #222222;
+    border-radius: 20px;
+    position: relative;
+    left: 2rem;
+
+}
+#premade-card img{
+    border-radius: 20px;
+}
+
+#display-premade{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#logoname{}
 @keyframes slider{
     0%{
         background-image: url(photo1.png);
@@ -241,9 +270,59 @@ button{
 }
 #Customize-button button{
     height: 2rem;
-    position: relative;
     top: 1rem;
     background-color:  #f4d98f;
+    position: relative;
+}
+
+#para-details p{
+    position: relative;
+    left: 1rem;
+    margin-bottom: 0.75rem;
+
+
+}
+
+#footer-div{
+    display: flex;
+    justify-content: space-around;
+
+}
+#footer-div div p{
+    color: #373535;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    
+}
+
+#details-heading h2{
+    margin-bottom: 0.75rem;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 1rem; 
+}
+
+#card-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.over-price{
+    text-decoration: line-through;
 }
 
 @media (max-width: 768px) {
@@ -277,6 +356,7 @@ button{
         max-width: 100%;
     }
 }
+
 
 
 @media (max-width: 480px) {
