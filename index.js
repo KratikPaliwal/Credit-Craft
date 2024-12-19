@@ -29,8 +29,34 @@ submit_btn.addEventListener('click',()=>{
     sdval = `${startDate.getMonth() + 1}/${(startDate.getFullYear()) - 2000}`;
     display_valid_date.innerHTML = sdval;
     edate = `${startDate.getMonth() + 1}/${((startDate.getFullYear()) - 2000)+5}`;
+    valid_date_input.innerHTML = sdval;
     display_end_date.innerHTML = edate;
     bank_display.innerHTML = bankval;
     display_number.innerHTML = numberval;
     name_display.innerHTML = nameval;
+    
+
+    localStorage.setItem('bankName', `${bankval}`);
+    localStorage.setItem('cardNumber', `${numberval}`);
+    localStorage.setItem('validitysd', `${sdval}`);
+    localStorage.setItem('validityed', `${edate}`);
+    localStorage.setItem('name', `${nameval}`);
 });
+
+submit_btn.addEventListener('click',()=>{
+    
+})
+
+const localStorageItems = Object.fromEntries(Object.entries(localStorage));
+const localStorageItems1 = JSON.parse(JSON.stringify(localStorage));
+for (let i = 0; i < localStorage.length; i++) {
+  const key = localStorage.key(i);
+  localStorageItems[key] = localStorage.getItem(key);
+}
+console.log(localStorageItems);
+console.log(localStorageItems1);
+valid_date_input.innerHTML = localStorageItems.validitysd;
+display_end_date.innerHTML = localStorageItems.validityed;
+bank_display.innerHTML = localStorageItems.bankName;
+display_number.innerHTML = localStorageItems.cardNumber;
+name_display.innerHTML = localStorageItems.name;
