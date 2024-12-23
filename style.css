@@ -53,7 +53,8 @@ a{
 .nav-heading{
     font-size: 18px;
     border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s ease;
+    transition: border-bottom 0.3s ease blue;
+    
 
 }
 
@@ -116,51 +117,22 @@ a{
     margin-top: 14px;
 }
 
-#sensor{
+.sensor{
     margin-left: 15%;
     margin-top: 10px;
 }
 
-#number{
-    display: flex;
-    justify-content: space-evenly;    
-    color: #fff;
-    font-size: 2rem;
-    margin-top: 10px;
-    padding: 1rem;
-    font-family: "Iceland", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-#valid{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: small;
-}
-
-#valid-date{
-    display: flex;
-    justify-content: space-around;
-    color: #fff;
-    font-size: smaller;
-    gap: 10px;
-}
-
-#date-div{
-    position: relative;
-    top: 8px;
-    font-size: 18px;
-}
-
-
 #name{
     color: #fff;
     position: relative;
-    top: 2.5rem;
+    top: 50%;
     margin-left: 20px;
+}
+
+#input-card{
+
+    position: relative;
+    top: 8%;
 }
 
 .input-div {
@@ -168,9 +140,10 @@ a{
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    margin: 5%; 
+    margin: 5%;
+    margin-bottom: 4rem;
+ 
 }
-
 
 .input-div label{
     width: 35%;
@@ -325,13 +298,13 @@ button{
     font-size: 1rem; 
 }
 
-#card-name{
+.card-name{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#card-price{
+.card-price{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -348,13 +321,78 @@ button{
     font-weight: 400;
 }
 
+.premade-design{
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.premade-images{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+
+}
+
+.overlay-text {
+    position: relative;
+    top: 4rem; 
+    left: 3rem;
+    color: white; 
+    font-size: 24px;
+}
+
+.user-name{
+    position: relative;
+    bottom: 2.5rem;
+    color: Gold ;
+    font-size: 1.1rem;
+    left: 1rem;
+    
+}
+
+.buy-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.buy-button button{
+    background-color: gold;
+    height: 2rem;
+    width: 10rem;
+    font-size: 1rem
+}
+
+.image-display{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+}
+
+.premade-details{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sensor-img{
+    position: relative;
+    top: 7rem;
+    right: 3rem;
+}
+
+.sub-heading{
+    position: relative;
+    font-size: 20px;
+    font-weight: 100;
+    left: 5rem;
+    top: 1rem;
+}
+
 
 @media (max-width: 768px) {
-    #footer-nav{
-        flex-direction: column;
-        align-items: center;
-        top: 50%;
-    }
 
     .nav-heading{
         margin-bottom: 10px;
