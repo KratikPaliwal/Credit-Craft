@@ -11,11 +11,18 @@ html,body{
 
 
 
+
 #header-div{
       height: 100px;
       width: 100%;
-      margin-bottom: 5px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #fff;
+      z-index: 100;
 }
+
+
 h3 img{
     position: relative;
     top: 1rem;
@@ -187,7 +194,7 @@ button{
 
 .main-section{
     background-image: url(creditcard.jpg);
-    height: 70rem;
+    height: 90vh;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -195,6 +202,7 @@ button{
     animation: slider 10s infinite 1s linear ;
     object-fit: cover;
     overflow: hidden;
+    background-position: center;
 }
 
 #premade-card{
@@ -391,6 +399,32 @@ button{
     top: 1rem;
 }
 
+.items-img{
+    position: relative;
+    top: 1rem;
+    border-radius: 20px;
+    align-items: center;
+    width: 450px;
+    height: 400px;
+    object-fit: cover;
+}
+
+#content{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 2rem;
+    
+
+}
+
+#display-card-name{
+    background-color: #b5adad;
+    height: 1.5rem;
+    width: 18rem;
+    margin-top: 2rem;
+}
+
 
 @media (max-width: 768px) {
 
@@ -430,7 +464,7 @@ button{
         font-size: 14px;
     }
 
-    
+
 
     #footer-div{
         height: auto;
