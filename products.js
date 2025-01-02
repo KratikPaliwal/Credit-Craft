@@ -2,7 +2,7 @@ const products = {
     cars: [
         {
             id: 1,
-            name: "Lamborghini",
+            name: "Lamborghini Black",
             image: "Images/2016-lamborghini-centenario-looks-like-a-gaming-mouse-with-wheels-105137_1.jpg",
             price: 99,
             originalPrice: 149,
@@ -10,7 +10,7 @@ const products = {
         },
         {
             id: 2,
-            name: "Lamborghini",
+            name: "Lamborghini White",
             image: "Images/car2.jpg",
             price: 99,
             originalPrice: 149,
@@ -28,7 +28,7 @@ const products = {
     avengers: [
         {
             id: 4,
-            name: "Avengers",
+            name: "Iron Man",
             image: "Images/avg.jpg",
             price: 99,
             originalPrice: 149,
@@ -36,7 +36,7 @@ const products = {
         },
         {
             id: 5,
-            name: "Lamborghini",
+            name: "Dr. Stranger",
             image: "Images/avg1.png",
             price: 99,
             originalPrice: 149,
@@ -44,7 +44,7 @@ const products = {
         },
         {
             id: 6,
-            name: "Supra",
+            name: "Mini Spinderman",
             image: "Images/avg2.png",
             price: 99,
             originalPrice: 149,
@@ -54,7 +54,7 @@ const products = {
     anime: [
         {
             id: 7,
-            name: "Lamborghini",
+            name: "Anime Universe",
             image: "anime.jpg",
             price: 99,
             originalPrice: 149,
@@ -62,7 +62,7 @@ const products = {
         },
         {
             id: 8,
-            name: "Lamborghini",
+            name: "Wooden Naruto",
             image: "Images/naruto.jpg",
             price: 99,
             originalPrice: 149,
@@ -70,7 +70,7 @@ const products = {
         },
         {
             id: 9,
-            name: "Supra",
+            name: "Itachi Uchiha",
             image: "Images/naruto1.png",
             price: 99,
             originalPrice: 149,

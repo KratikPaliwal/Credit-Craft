@@ -31,7 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Please enter your name for the card');
             return;
         }
+    
         // Add preview functionality here
+         
         previewCard(product, cardName);
     });
 
