@@ -357,7 +357,7 @@ button{
     align-items: center;
 }
 
-.card-price{
+.card-price{  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -366,11 +366,11 @@ button{
 
 .over-price{
     text-decoration: line-through;
-}
+}  
 
 #premade{
     margin-left: 3rem;
-    margin-top: 2rem;
+    margin-top: 7rem;
     font-weight: 400;
 }
 
@@ -539,12 +539,46 @@ button{
     width: 450px;
     border-radius: 20px;
     position: relative;
-    top: 120px;
-    left: 20px;
+    
 
 
 }
 
+
+.custom-card{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 120px;
+    left: 20px;
+}
+
+#label-img{
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+}
+
+.img-selection{
+    position: relative;
+    top: 100px;
+}
+
+.file-div{
+   border: 3px solid #027D9F;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 30px;
+   padding: 0 10px;
+
+}
+
+.label-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 
 

@@ -27,13 +27,28 @@
             </div><br>
     </header>
 
-    <div>
+    <div class="custom-card">
         <div id="your-design">
-            <img src="Images/blackbacground.jpg" alt="">
+            <img src="Images/blackbacground.jpg" alt="" id="displayed-image">
         </div>
-        <div>
-             <img id="customImage" src="" alt="yourdesign">
+        <div class="img-selection">
+            <div id="label-img" class="label-div">
+                <label for="" >Upload Image</label>
+            </div>
+             <div class="file-div">
+                <input type="file" id="img-path">
+             </div>
+             <div class="label-div">
+                <label for="">Select Font</label>
+             </div>
+             <div>
+                <select id="font-select" class="file-div">
+                </select>
+             </div>
+
         </div>
     </div>
+    <script src="customCard.js"></script>
+    <script src="googlefont.js"></script>
 </body>
 </html>
