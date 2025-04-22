@@ -29,7 +29,7 @@ const products = {
         {
             id: 4,
             name: "Iron Man",
-            image: "Images/avg.jpg",
+            image: "Images/iron_man.png",
             price: 99,
             originalPrice: 149,
             url: "/products/avengers-1"

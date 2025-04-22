@@ -33,7 +33,6 @@ function renderProductSection(category, products) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Render all product sections
     Object.keys(products).forEach(category => {
         renderProductSection(category, products[category]);
     });
