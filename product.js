@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Get product ID from URL parameters
+    
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');
 
